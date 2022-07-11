@@ -1,0 +1,627 @@
+
+// color
+$putih: #fefefe
+$banner-gray: #f1f1f1
+$old-gray: #b8b8b8
+$oranye-fm: #F8981C
+$coklat: #907F7F
+$biru-satu: #3B60AD
+$hitam: #000000
+$kuning-pertama: #FAB216
+$biru-dua: #112D4E
+$ijo-wa: #25D366
+$biru-tiga: #DBE2EF
+$ungu: #612F7A
+$oranye: #E86E25
+$kuning-paket: #F59F03
+$ijo-paket: #4CB8AB
+$item-abu: #393B3E
+
+// ukuran
+$mw: 1440px
+$headerh : 90px
+
+
+* 
+  box-sizing: border-box
+
+// custom scrollbar
+
+/* width */
+::-webkit-scrollbar 
+  width: 15px
+
+
+/* Track */
+::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 5px grey
+  border-radius: 0px
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb 
+  background: $biru-satu
+  border-radius: 5px
+
+
+/* Handle hover */
+::-webkit-scrollbar-thumb:hover 
+  background: $biru-dua
+
+
+// .content
+//     position: relative
+//     width: 100%
+//     max-width: $mw
+    
+
+// start header
+
+.header-desktop
+    display: flex !important
+    flex-wrap: wrap !important
+    align-items: center !important
+    justify-content: space-between !important
+    position: fixed
+    left: 0px
+    right: 0px
+    top: 0px
+    width: 100%
+    // max width komen apabila header position mau di fixed
+    max-width: $mw 
+    height: $headerh
+    background-color: $putih
+    box-shadow: 0px 4px 4px rgba(204, 196, 196, 0.25)
+    z-index: 5
+
+
+    .logo-desktop
+        position: absolute
+        width: 100px
+        height: 47.22px
+        left: 80px
+        top: 21px
+        background-image: url(/Assets/Logo-FirstMedia.png)
+
+    .menu
+        position: absolute
+        width: 401px
+        height: 46px
+        right: 80px
+        top: 22px
+  
+    .list
+        list-style: none
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        padding: 10px
+        gap: 30px
+
+        li
+            font: 
+              family: 'Poppins'
+              style: normal
+              weight: 600
+              size: 16px
+            line-height: 26px
+            flex: none
+            flex-grow: 0
+
+            a
+                text-decoration: none
+                color: $biru-dua
+                
+            span
+                margin-left: 10px
+
+// end sass header desktop
+
+// sass header mobile
+.header-mobile 
+  overflow: hidden
+  background-color: #fff
+  position: fixed
+  z-index: 5
+  width: 100%
+  box-shadow: 0px 4px 4px rgba(204, 196, 196, 0.25)
+  display: none
+    
+    
+.header-mobile a 
+  float: left
+  display: block
+  color: #f2f2f2
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+  font-size: 17px
+
+.header-mobile .icon 
+  display: none
+  color: black !important
+
+.logo-mobile
+  width: 54px
+  height: 41px
+  margin-top: 15px
+  margin-left: 43%
+  background-image: url(/Assets/Logo-FirstMedia.png)
+  background-size: contain
+  background-repeat: no-repeat
+    
+    
+
+//  end sass header mobile             
+     
+// start banner
+
+.banner 
+    position: relative
+    width: 100%
+    max-width: $mw
+    height: 585px
+    left: 0px
+    // karna posisi relative maka top 0 px
+    top: 0px 
+    z-index: 0
+    background: 
+      image: url(/Assets/banner-hubungikami.png)
+      attachment: fixed
+      size: contain
+      repeat: no-repeat
+
+.headline-banner
+    position: relative
+    width: 1280px
+    max-width: $mw
+    height: 60px
+    top: 260px
+    z-index: 2
+    h1
+     text-align: center
+     line-height: 60px
+     color: $putih
+     font: 
+       family: 'Poppins'
+       style: normal
+       weight: 600
+       size: 40px
+
+    span
+      color: $kuning-pertama
+
+.subhead-banner
+  position: relative
+  width: 1280px
+  max-width: $mw
+  height: 29px
+  top: 260px
+  z-index: 2
+  
+  h5
+    text-align: center
+    line-height: 28px
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 19px
+    color: $putih
+       
+.banner-overlay
+    position: absolute
+    width: 100%
+    max-width: $mw
+    height: 585px
+    left: 0px
+    top: 0px
+    z-index: 1
+    background: $hitam
+    opacity: 0.1
+
+.contact-icon
+  position: fixed
+  width: 60px !important
+  height: 60px
+  right: 0px
+  // left: 0px
+  top: 333px
+  background-color: $ijo-wa
+  border-radius: 10px 0px 0px 10px
+  z-index: 80
+
+  .wa-icon 
+    position: relative
+    width: 40px
+    height: 40px
+    top: 10px
+    background-image: url(/Assets/wa_icon.png)
+
+#contact-wa-mobile
+   display: none !important
+ 
+// end banner
+
+// start body content
+
+.body-content 
+    position: relative
+    width: 100%
+    max-width: $mw
+    height: 772px
+    left: 0px
+    // top: 636px 
+    margin-top: -39px
+    background-color: $putih
+    z-index: 3
+    border-radius: 50px 50px 0px 0px
+    
+.hk-tab
+  position: relative
+  // background-color: $biru-dua
+  width: 760px !important
+  // max-width: $mw
+  height: 142px
+  top: 50px
+  display: flex !important
+  // flex-direction: row !important
+  gap: 20px
+  overflow-x: auto
+
+  .button-hk
+    width: 240px !important
+    height: 142px
+    background-color: inherit
+    border-radius: 10px
+    border: none
+    outline: none
+    &.active
+      background-color: $biru-satu
+      p
+        color: $putih
+      #hk-ic-1
+        background-image: url(/Assets/location-dot-solid2.png)
+      #hk-ic-2
+        background-image: url(/Assets/contact-support-svgrepo-com2.png)
+      #hk-ic-3  
+        background-image: url(/Assets/question-svgrepo-com2.png)
+
+  .bt-cpt-hk
+     position: relative
+     text-align: center
+     p
+       font:
+        family: 'Poppins'
+        style: normal
+        weight: 600
+        size: 16px
+       line-height: 24px  
+       color: $old-gray
+
+  .icon-hk
+     position: inherit !important
+     top: 30px
+     background-repeat: no-repeat
+
+#hk-ic-1
+  background-image: url(/Assets/location-dot-solid1.png)
+  width: 30px !important
+  height: 52px
+#hk-ic-2
+  background-image: url(/Assets/contact-support-svgrepo-com1.png)
+  width: 52px !important
+  height: 52px  
+#hk-ic-3
+  background-image: url(/Assets/question-svgrepo-com1.png)
+  width: 48px !important
+  height: 48px  
+
+// start isi tab
+.tabcontent
+  position: absolute
+  height: 415px
+  width: 1060px !important
+  top: 239px
+  left: 0
+  right: 0
+  max-width: $mw
+  // opacity: 0.15
+  z-index: 3
+  background-color: $biru-tiga 
+  border-radius: 30px
+  overflow: auto !important
+
+.frame-lokasi
+  position: absolute
+  width: 520px
+  height: 315px
+  left: 50px
+  top: 50px
+
+// sass tab alamat 
+.alamat-lokasi
+  position: absolute
+  width: 317px !important
+  height: 166px
+  right: 120px  
+  top: 120px  
+  p
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px
+    line-height: 33px 
+    text-align: justify
+    color: $item-abu
+  
+// sass tab form
+
+.input-flex-kolom
+  display: flex
+  flex-direction: row
+  gap: 15px 
+  position: absolute
+  top: 50px
+  justify-content: center
+  
+#flex-kolom
+  padding: 0px 0px 0px 10px
+  width: 371px !important
+  height: 53px   
+  background-color: $putih
+  border: 1px solid $hitam
+
+.flex-kolom-panjang
+  position: absolute
+  width: 100%
+  height: 53px 
+  display: flex
+  flex-direction: columns
+  justify-content: center
+#input-topik
+  top: 118px
+#input-message
+  top: 186px
+  height: 119px 
+  
+// .input-nomor-hp
+//   position: absolute
+//   top: 127px
+.kolom-panjang
+  padding: 0px 0px 0px 10px
+  width: 760px !important
+  height: 53px 
+  background-color: $putih
+  border: 1px solid $hitam
+#kolom-message
+  height: 119px 
+  padding: 10px 0px 0px 10px
+  
+
+.button-input-hk
+  width: 397px !important
+  height: 47px !important
+  padding: 12px 179px !important
+  background-color: $biru-dua
+  a
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px  
+    line-height: 22px 
+    color: $putih
+    text-decoration: none
+#button-hk-form
+  top: 330px
+
+.accordion-faq
+  position: relative
+  width: 100%
+  top: 50px
+.accordion 
+  color: $biru-dua
+  background-color: $biru-tiga !important
+  cursor: pointer
+  padding: 18px
+  width: 100%
+  border: none
+  text-align: left
+  outline: none
+  font-size: 15px
+  transition: 0.4s
+  font:
+    family: 'Poppins'
+    style: normal
+    weight: 600
+    size: 19px 
+  line-height: 28px
+        
+.panel 
+  padding: 0 18px
+  display: none
+  overflow: hidden
+  p
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px
+    line-height: 22px 
+    color: $item-abu
+        
+
+// end isi tab
+
+
+// start modal sass
+.modal-header
+  height: 121px
+  width: 457px !important
+  background-color: $biru-satu
+  border-radius: 30px 30px 0px 0px !important
+.modal-content
+  width: 457px !important
+  height: 425px
+  border-radius: 30px !important
+  background-color: rgba(254, 254, 254, 0.1) !important
+.modal-body
+   width: 457px !important
+   height: 425px
+   background-color: $putih
+   border-radius: 0px 0px 30px 30px !important
+
+.modal-title
+  padding: 0px !important
+  position: absolute
+  width: 232px !important
+  height: 69px
+  left: 30px 
+  top: 26px
+  p
+    font:
+      family: 'poppins'
+      style: normal
+      weight: 500
+      size: 15px   
+    line-height: 22px     
+    color: $putih
+
+.input-nama
+  display: flex
+  flex-direction: row
+  gap: 15px 
+  position: absolute   
+  top: 15px
+#input-nama-user
+  padding: 12px 10px 12px 10px
+  width: 191px !important
+  height: 47px   
+  background-color: $biru-tiga
+  border-radius: 5px
+  border: none
+
+.input-email
+  position: absolute 
+  top: 72px
+.input-nomor-hp
+  position: absolute
+  top: 127px
+.input-alamat
+  position: absolute
+  top: 182px
+#input-kolom-panjang
+  padding: 12px 10px 12px 10px
+  width: 397px !important
+  height: 47px 
+  background-color: $biru-tiga
+  border-radius: 5px
+  border: none
+
+.button-input
+  position: absolute
+  left: 28px
+  width: 397px !important
+  height: 47px !important
+  padding: 12px 179px !important
+  background-color: $biru-dua
+  top: 240px
+  border-radius: 5px
+  a
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px  
+    line-height: 22px 
+    color: $putih
+    text-decoration: none
+
+.tombol-close
+  position: absolute
+  right: 30px
+  top: 30px 
+  width: 35px !important
+  height: 35px 
+  border-radius: 100%
+  background-color: $putih
+.button-x
+  position: absolute
+  width: 7px 
+  height: 23px 
+  left: 1px 
+  top: 5px 
+  p
+    cursor: pointer
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px 
+    line-height: 22px 
+    color: $hitam
+
+// end modal sass
+// end body content
+
+// start footer
+.footer 
+    position: relative
+    width: 100%
+    max-width: $mw
+    height: 90px
+    background-color: $biru-dua
+    z-index: 3
+    left: 0
+
+.copy-right 
+  position: absolute
+  width: 413px !important
+  height: 24px
+  max-width: $mw
+  left: 80px
+  top: 32px
+
+  h3
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 16px
+    line-height: 24px
+    color: $putih
+
+.menu-footer
+  position: absolute 
+  width: 361px !important
+  height: 24px
+  right: 80px 
+  top: 22px
+
+  ul
+    list-style: none
+    display: flex 
+    flex-direction: row 
+    align-items: flex-start 
+    padding: 10px 
+    gap: 30px
+
+  li
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 16px
+    line-height: 26px
+    flex: none
+    flex-grow: 0
+
+  a
+    text-decoration: none
+    color: $putih
+
+// end footer
+
+@import 'HubungiKami_resp'

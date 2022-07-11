@@ -1,0 +1,269 @@
+// color
+$putih: #fefefe
+$banner-gray: #f1f1f1
+$old-gray: #b8b8b8
+$oranye-fm: #F8981C
+$coklat: #907F7F
+$biru-satu: #3B60AD
+$hitam: #000000
+$kuning-pertama: #FAB216
+$biru-dua: #112D4E
+$ijo-wa: #25D366
+$biru-tiga: #DBE2EF
+$ungu: #612F7A
+$oranye: #E86E25
+$kuning-paket: #F59F03
+$ijo-paket: #4CB8AB
+$item-abu: #393B3E
+
+@media screen and (max-width: 600px)
+    /* width */
+    ::-webkit-scrollbar 
+        width: 0px !important
+        height: 0px !important
+    .headline1,.content-text1,.menu,
+    .header-desktop
+        display: none !important
+
+    // start sass header mobile
+
+    .header-mobile a:not(:first-child)
+        display: none
+
+    .header-mobile a.icon 
+        float: right
+        display: block
+
+    .header-mobile.responsive 
+        position: fixed
+
+    .header-mobile.responsive .icon 
+        position: absolute
+        right: 0
+        top: 0
+
+    .header-mobile.responsive a 
+        float: none
+        display: block
+        text-align: center
+        color: #000
+
+    .logo-mobile
+        margin-top: 15px
+        margin-left: 43%
+
+    .header-mobile
+        display: block
+    // end sass header mobile 
+    // start sass banner
+    .banner
+        background:
+            image: url(/Assets/banner-hubungikami-mobile.png)
+            size: contain
+            repeat: no-repeat
+        top: 60px
+    
+    .headline-banner
+        width: 100% !important
+        height: 41px
+        top: 50px !important
+        left: 0px
+        right: 0px
+        text-align: center
+        h1
+            font:
+                weight: 600
+                size: 24px 
+            line-height: 36px 
+
+    .subhead-banner
+        width: 100% !important
+        height: 24px 
+        top: 40px
+        left: 0px
+        right: 0px
+        text-align: center
+        h5
+            font:
+                weight: 500
+                size: 16px
+            line-height: 24px 
+
+    .banner-overlay
+        height: 330px
+
+    .contact-icon
+        width: 40px !important
+        height: 45px
+    .wa-icon 
+        width: 30px !important
+        height: 29px !important
+        top: 8px !important
+        right: 5px
+        background:
+            size: contain !important
+            repeat: no-repeat !important
+    #contact-wa-desktop 
+        display: none !important
+    #contact-wa-mobile
+        display: block !important
+    // end sass banner
+
+    // start sass body content
+    .body-content
+        margin-top: -300px
+        height: 700px
+    .hk-tab
+        width: 100% !important
+    .button-hk
+        min-width: 240px !important
+    .tabcontent
+        width: 100% !important
+        border-radius: 0px
+
+    .frame-lokasi
+        width: 250px !important
+        height: 180px
+        left: 17% !important
+    
+    .alamat-lokasi
+        width: 250px !important
+        height: 71px
+        top: 250px
+        left: 0px
+        right: 0px
+        p
+            font:
+                weight: 500
+                size: 11px 
+            line-height: 16px
+    
+    .input-flex-kolom
+        flex-direction: column
+        align-items: center
+        left: 0px
+
+    #flex-kolom
+        width: 260px !important
+        height: 47px   
+    
+    .kolom-panjang
+        width: 260px !important
+        height: 47px 
+    #kolom-message
+        height: 75px 
+    
+    .flex-kolom-panjang
+        left: 0px
+    #input-topik
+        top: 175px
+    #input-message
+        top: 237px
+        height: 75px !important
+
+    .button-input-hk
+        width: 107px !important
+        height: 40px !important
+        padding: 6px 35px !important
+
+    .accordion
+        font:
+            weight: 600
+            size: 12px
+        line-height: 18px
+
+    .panel 
+        p
+            font:
+                weight: 500
+                size: 11px 
+            line-height: 16px
+
+
+    // end sass body content
+
+    // start sass footer
+    .footer
+        height: 115px !important
+    
+    .copy-right
+        width: 240px !important
+        height: 40px   
+        left: 0px
+        right: 0px
+        top: 60px 
+        text-align: center
+        h3
+            font:
+                weight: 500
+                size: 13px 
+            line-height: 20px
+
+    .menu-footer
+        top: 10px !important
+        left: 0px 
+        right: 0px 
+        width: 274px
+        height: 20px  
+        ul
+            gap: 10px !important
+    
+    // end sass footer
+    // start sass modal-mobile
+    .modal-content
+        width: 100% !important
+        height: 100% !important
+        border-radius: 0px !important
+    .modal-header
+        width: 100% !important
+        border-radius: 0px !important
+    .modal-body
+        width: 100% !important
+        height: 100% !important
+        border-radius: 0px !important
+    
+    #input-nama-user
+        width: 290px !important
+
+    #input-kolom-panjang
+        // padding: 12px 10px 12px 10px
+        width: 290px !important
+
+    .input-nama
+        display: flex
+        flex-direction: column
+        align-items: center
+        left: 0px
+        // padding: 12px 249px 12px 10px
+    .input-email
+        top: 142px
+        display: flex
+        flex-direction: column
+        align-items: center
+        left: 0px
+    .input-nomor-hp
+        top: 204px
+        display: flex
+        flex-direction: column
+        align-items: center
+        left: 0px
+    .input-alamat
+        top: 266px
+        display: flex
+        flex-direction: column
+        align-items: center
+        left: 0px
+
+    .button-input
+        top: 343px
+        left: 0px
+        right: 0px
+        width: 290px !important
+        padding: 10px 130px !important
+        a
+            font:
+                weight: 500
+                size: 11px  
+            line-height: 16px 
+    // end sass modal mobile
+  

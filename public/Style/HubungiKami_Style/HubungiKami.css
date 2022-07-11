@@ -1,0 +1,905 @@
+* {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3B60AD;
+  border-radius: 5px;
+}
+
+/* Handle hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #112D4E;
+}
+
+.header-desktop {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  max-width: 1440px;
+  height: 90px;
+  background-color: #fefefe;
+  box-shadow: 0px 4px 4px rgba(204, 196, 196, 0.25);
+  z-index: 5;
+}
+.header-desktop .logo-desktop {
+  position: absolute;
+  width: 100px;
+  height: 47.22px;
+  left: 80px;
+  top: 21px;
+  background-image: url(/Assets/Logo-FirstMedia.png);
+}
+.header-desktop .menu {
+  position: absolute;
+  width: 401px;
+  height: 46px;
+  right: 80px;
+  top: 22px;
+}
+.header-desktop .list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 30px;
+}
+.header-desktop .list li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  flex: none;
+  flex-grow: 0;
+}
+.header-desktop .list li a {
+  text-decoration: none;
+  color: #112D4E;
+}
+.header-desktop .list li span {
+  margin-left: 10px;
+}
+
+.header-mobile {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(204, 196, 196, 0.25);
+  display: none;
+}
+
+.header-mobile a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header-mobile .icon {
+  display: none;
+  color: black !important;
+}
+
+.logo-mobile {
+  width: 54px;
+  height: 41px;
+  margin-top: 15px;
+  margin-left: 43%;
+  background-image: url(/Assets/Logo-FirstMedia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 585px;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  background-image: url(/Assets/banner-hubungikami.png);
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.headline-banner {
+  position: relative;
+  width: 1280px;
+  max-width: 1440px;
+  height: 60px;
+  top: 260px;
+  z-index: 2;
+}
+.headline-banner h1 {
+  text-align: center;
+  line-height: 60px;
+  color: #fefefe;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+}
+.headline-banner span {
+  color: #FAB216;
+}
+
+.subhead-banner {
+  position: relative;
+  width: 1280px;
+  max-width: 1440px;
+  height: 29px;
+  top: 260px;
+  z-index: 2;
+}
+.subhead-banner h5 {
+  text-align: center;
+  line-height: 28px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  color: #fefefe;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  height: 585px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  background: #000000;
+  opacity: 0.1;
+}
+
+.contact-icon {
+  position: fixed;
+  width: 60px !important;
+  height: 60px;
+  right: 0px;
+  top: 333px;
+  background-color: #25D366;
+  border-radius: 10px 0px 0px 10px;
+  z-index: 80;
+}
+.contact-icon .wa-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  background-image: url(/Assets/wa_icon.png);
+}
+
+#contact-wa-mobile {
+  display: none !important;
+}
+
+.body-content {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 772px;
+  left: 0px;
+  margin-top: -39px;
+  background-color: #fefefe;
+  z-index: 3;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.hk-tab {
+  position: relative;
+  width: 760px !important;
+  height: 142px;
+  top: 50px;
+  display: flex !important;
+  gap: 20px;
+  overflow-x: auto;
+}
+.hk-tab .button-hk {
+  width: 240px !important;
+  height: 142px;
+  background-color: inherit;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.hk-tab .button-hk.active {
+  background-color: #3B60AD;
+}
+.hk-tab .button-hk.active p {
+  color: #fefefe;
+}
+.hk-tab .button-hk.active #hk-ic-1 {
+  background-image: url(/Assets/location-dot-solid2.png);
+}
+.hk-tab .button-hk.active #hk-ic-2 {
+  background-image: url(/Assets/contact-support-svgrepo-com2.png);
+}
+.hk-tab .button-hk.active #hk-ic-3 {
+  background-image: url(/Assets/question-svgrepo-com2.png);
+}
+.hk-tab .bt-cpt-hk {
+  position: relative;
+  text-align: center;
+}
+.hk-tab .bt-cpt-hk p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b8b8b8;
+}
+.hk-tab .icon-hk {
+  position: inherit !important;
+  top: 30px;
+  background-repeat: no-repeat;
+}
+
+#hk-ic-1 {
+  background-image: url(/Assets/location-dot-solid1.png);
+  width: 30px !important;
+  height: 52px;
+}
+
+#hk-ic-2 {
+  background-image: url(/Assets/contact-support-svgrepo-com1.png);
+  width: 52px !important;
+  height: 52px;
+}
+
+#hk-ic-3 {
+  background-image: url(/Assets/question-svgrepo-com1.png);
+  width: 48px !important;
+  height: 48px;
+}
+
+.tabcontent {
+  position: absolute;
+  height: 415px;
+  width: 1060px !important;
+  top: 239px;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  z-index: 3;
+  background-color: #DBE2EF;
+  border-radius: 30px;
+  overflow: auto !important;
+}
+
+.frame-lokasi {
+  position: absolute;
+  width: 520px;
+  height: 315px;
+  left: 50px;
+  top: 50px;
+}
+
+.alamat-lokasi {
+  position: absolute;
+  width: 317px !important;
+  height: 166px;
+  right: 120px;
+  top: 120px;
+}
+.alamat-lokasi p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 33px;
+  text-align: justify;
+  color: #393B3E;
+}
+
+.input-flex-kolom {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: absolute;
+  top: 50px;
+  justify-content: center;
+}
+
+#flex-kolom {
+  padding: 0px 0px 0px 10px;
+  width: 371px !important;
+  height: 53px;
+  background-color: #fefefe;
+  border: 1px solid #000000;
+}
+
+.flex-kolom-panjang {
+  position: absolute;
+  width: 100%;
+  height: 53px;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+}
+
+#input-topik {
+  top: 118px;
+}
+
+#input-message {
+  top: 186px;
+  height: 119px;
+}
+
+.kolom-panjang {
+  padding: 0px 0px 0px 10px;
+  width: 760px !important;
+  height: 53px;
+  background-color: #fefefe;
+  border: 1px solid #000000;
+}
+
+#kolom-message {
+  height: 119px;
+  padding: 10px 0px 0px 10px;
+}
+
+.button-input-hk {
+  width: 397px !important;
+  height: 47px !important;
+  padding: 12px 179px !important;
+  background-color: #112D4E;
+}
+.button-input-hk a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+#button-hk-form {
+  top: 330px;
+}
+
+.accordion-faq {
+  position: relative;
+  width: 100%;
+  top: 50px;
+}
+
+.accordion {
+  color: #112D4E;
+  background-color: #DBE2EF !important;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.panel p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #393B3E;
+}
+
+.modal-header {
+  height: 121px;
+  width: 457px !important;
+  background-color: #3B60AD;
+  border-radius: 30px 30px 0px 0px !important;
+}
+
+.modal-content {
+  width: 457px !important;
+  height: 425px;
+  border-radius: 30px !important;
+  background-color: rgba(254, 254, 254, 0.1) !important;
+}
+
+.modal-body {
+  width: 457px !important;
+  height: 425px;
+  background-color: #fefefe;
+  border-radius: 0px 0px 30px 30px !important;
+}
+
+.modal-title {
+  padding: 0px !important;
+  position: absolute;
+  width: 232px !important;
+  height: 69px;
+  left: 30px;
+  top: 26px;
+}
+.modal-title p {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fefefe;
+}
+
+.input-nama {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: absolute;
+  top: 15px;
+}
+
+#input-nama-user {
+  padding: 12px 10px 12px 10px;
+  width: 191px !important;
+  height: 47px;
+  background-color: #DBE2EF;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-email {
+  position: absolute;
+  top: 72px;
+}
+
+.input-nomor-hp {
+  position: absolute;
+  top: 127px;
+}
+
+.input-alamat {
+  position: absolute;
+  top: 182px;
+}
+
+#input-kolom-panjang {
+  padding: 12px 10px 12px 10px;
+  width: 397px !important;
+  height: 47px;
+  background-color: #DBE2EF;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-input {
+  position: absolute;
+  left: 28px;
+  width: 397px !important;
+  height: 47px !important;
+  padding: 12px 179px !important;
+  background-color: #112D4E;
+  top: 240px;
+  border-radius: 5px;
+}
+.button-input a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.tombol-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 35px !important;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #fefefe;
+}
+
+.button-x {
+  position: absolute;
+  width: 7px;
+  height: 23px;
+  left: 1px;
+  top: 5px;
+}
+.button-x p {
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 90px;
+  background-color: #112D4E;
+  z-index: 3;
+  left: 0;
+}
+
+.copy-right {
+  position: absolute;
+  width: 413px !important;
+  height: 24px;
+  max-width: 1440px;
+  left: 80px;
+  top: 32px;
+}
+.copy-right h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fefefe;
+}
+
+.menu-footer {
+  position: absolute;
+  width: 361px !important;
+  height: 24px;
+  right: 80px;
+  top: 22px;
+}
+.menu-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 30px;
+}
+.menu-footer li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  flex: none;
+  flex-grow: 0;
+}
+.menu-footer a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+@media screen and (max-width: 600px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+  }
+
+  .headline1, .content-text1, .menu,
+.header-desktop {
+    display: none !important;
+  }
+
+  .header-mobile a:not(:first-child) {
+    display: none;
+  }
+
+  .header-mobile a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header-mobile.responsive {
+    position: fixed;
+  }
+
+  .header-mobile.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-mobile.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    color: #000;
+  }
+
+  .logo-mobile {
+    margin-top: 15px;
+    margin-left: 43%;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .banner {
+    background-image: url(/Assets/banner-hubungikami-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 60px;
+  }
+
+  .headline-banner {
+    width: 100% !important;
+    height: 41px;
+    top: 50px !important;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+  }
+  .headline-banner h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subhead-banner {
+    width: 100% !important;
+    height: 24px;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+  }
+  .subhead-banner h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .banner-overlay {
+    height: 330px;
+  }
+
+  .contact-icon {
+    width: 40px !important;
+    height: 45px;
+  }
+
+  .wa-icon {
+    width: 30px !important;
+    height: 29px !important;
+    top: 8px !important;
+    right: 5px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  #contact-wa-desktop {
+    display: none !important;
+  }
+
+  #contact-wa-mobile {
+    display: block !important;
+  }
+
+  .body-content {
+    margin-top: -300px;
+    height: 700px;
+  }
+
+  .hk-tab {
+    width: 100% !important;
+  }
+
+  .button-hk {
+    min-width: 240px !important;
+  }
+
+  .tabcontent {
+    width: 100% !important;
+    border-radius: 0px;
+  }
+
+  .frame-lokasi {
+    width: 250px !important;
+    height: 180px;
+    left: 17% !important;
+  }
+
+  .alamat-lokasi {
+    width: 250px !important;
+    height: 71px;
+    top: 250px;
+    left: 0px;
+    right: 0px;
+  }
+  .alamat-lokasi p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .input-flex-kolom {
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  #flex-kolom {
+    width: 260px !important;
+    height: 47px;
+  }
+
+  .kolom-panjang {
+    width: 260px !important;
+    height: 47px;
+  }
+
+  #kolom-message {
+    height: 75px;
+  }
+
+  .flex-kolom-panjang {
+    left: 0px;
+  }
+
+  #input-topik {
+    top: 175px;
+  }
+
+  #input-message {
+    top: 237px;
+    height: 75px !important;
+  }
+
+  .button-input-hk {
+    width: 107px !important;
+    height: 40px !important;
+    padding: 6px 35px !important;
+  }
+
+  .accordion {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .panel p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .footer {
+    height: 115px !important;
+  }
+
+  .copy-right {
+    width: 240px !important;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    top: 60px;
+    text-align: center;
+  }
+  .copy-right h3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .menu-footer {
+    top: 10px !important;
+    left: 0px;
+    right: 0px;
+    width: 274px;
+    height: 20px;
+  }
+  .menu-footer ul {
+    gap: 10px !important;
+  }
+
+  .modal-content {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+  }
+
+  .modal-header {
+    width: 100% !important;
+    border-radius: 0px !important;
+  }
+
+  .modal-body {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+  }
+
+  #input-nama-user {
+    width: 290px !important;
+  }
+
+  #input-kolom-panjang {
+    width: 290px !important;
+  }
+
+  .input-nama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .input-email {
+    top: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .input-nomor-hp {
+    top: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .input-alamat {
+    top: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .button-input {
+    top: 343px;
+    left: 0px;
+    right: 0px;
+    width: 290px !important;
+    padding: 10px 130px !important;
+  }
+  .button-input a {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}/*# sourceMappingURL=HubungiKami.css.map */

@@ -1,0 +1,962 @@
+
+// color
+$putih: #fefefe
+$banner-gray: #f1f1f1
+$old-gray: #b8b8b8
+$oranye-fm: #F8981C
+$coklat: #907F7F
+$biru-satu: #3B60AD
+$hitam: #000000
+$kuning-pertama: #FAB216
+$biru-dua: #112D4E
+$ijo-wa: #25D366
+$biru-tiga: #DBE2EF
+$ungu: #612F7A
+$oranye: #E86E25
+$kuning-paket: #F59F03
+$ijo-paket: #4CB8AB
+$item-abu: #393B3E
+
+// ukuran
+$mw: 1440px
+$headerh : 90px
+
+
+* 
+  box-sizing: border-box
+
+// custom scrollbar
+
+/* width */
+::-webkit-scrollbar 
+  width: 15px
+
+
+/* Track */
+::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 5px grey
+  border-radius: 0px
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb 
+  background: $biru-satu
+  border-radius: 5px
+
+
+/* Handle hover */
+::-webkit-scrollbar-thumb:hover 
+  background: $biru-dua
+
+
+// sass header desktop
+
+.header-desktop
+    display: flex !important
+    flex-wrap: wrap !important
+    align-items: center !important
+    justify-content: space-between !important
+    position: fixed
+    left: 0px
+    right: 0px
+    top: 0px
+    width: 100%
+    // max width komen apabila header position mau di fixed
+    max-width: $mw 
+    height: $headerh
+    background-color: $putih
+    box-shadow: 0px 4px 4px rgba(204, 196, 196, 0.25)
+    z-index: 5
+
+
+    .logo-desktop
+        position: absolute
+        width: 100px
+        height: 47.22px
+        left: 80px
+        top: 21px
+        background-image: url(/Assets/Logo-FirstMedia.png)
+
+    .menu
+        position: absolute
+        width: 401px
+        height: 46px
+        right: 80px
+        top: 22px
+  
+    .list
+        list-style: none
+        display: flex
+        flex-direction: row
+        align-items: flex-start
+        padding: 10px
+        gap: 30px
+
+        li
+            font: 
+              family: 'Poppins'
+              style: normal
+              weight: 600
+              size: 16px
+            line-height: 26px
+            flex: none
+            flex-grow: 0
+
+            a
+                text-decoration: none
+                color: $biru-dua
+                
+            span
+                margin-left: 10px
+
+// end sass header desktop
+
+// sass header mobile
+.header-mobile 
+  overflow: hidden
+  background-color: #fff
+  position: fixed
+  z-index: 5
+  width: 100%
+  box-shadow: 0px 4px 4px rgba(204, 196, 196, 0.25)
+  display: none
+    
+    
+.header-mobile a 
+  float: left
+  display: block
+  color: #f2f2f2
+  text-align: center
+  padding: 14px 16px
+  text-decoration: none
+  font-size: 17px
+
+.header-mobile .icon 
+  display: none
+  color: black
+
+.logo-mobile
+  width: 54px
+  height: 41px
+  margin-top: 15px
+  margin-left: 43%
+  background-image: url(/Assets/Logo-FirstMedia.png)
+  background-size: contain
+  background-repeat: no-repeat
+    
+    
+
+//  end sass header mobile               
+        
+// end header         
+     
+// start banner
+
+.banner 
+    position: relative
+    width: 100%
+    max-width: $mw
+    height: 585px
+    left: 0px
+    // karna posisi relative maka top 0 px
+    top: 0px 
+    z-index: 0
+    background: 
+      image: url(/Assets/banner-homepage.png)
+      attachment: fixed
+      size: cover
+
+.headline-banner
+    position: absolute
+    width: 550px !important
+    height: 60px
+    left: 80px
+    top: 340px
+    z-index: 2
+    h1
+     line-height: 60px
+     color: $putih
+     font: 
+       family: 'Poppins'
+       style: normal
+       weight: 600
+       size: 40px
+
+    span
+      color: $kuning-pertama
+
+.subhead-banner
+  position: absolute
+  color: $putih
+  width: 217px !important
+  height: 29px
+  left: 80px
+  top: 396px
+  z-index: 2
+  
+  h5
+    line-height: 28px
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 19px
+       
+.banner-overlay
+    position: absolute
+    width: 100%
+    max-width: $mw
+    height: 585px
+    left: 0px
+    top: 0px
+    z-index: 1
+    background: linear-gradient(90.22deg, rgba(59, 96, 173, 0.6) 0.27%, rgba(59, 96, 173, 0) 59.29%)
+    opacity: 0.6
+
+.contact-icon
+  position: fixed
+  width: 60px !important
+  height: 60px
+  right: 0px
+  // left: 0px
+  top: 333px
+  background-color: $ijo-wa
+  border-radius: 10px 0px 0px 10px
+  z-index: 80
+
+  .wa-icon 
+    position: relative
+    width: 40px
+    height: 40px
+    top: 10px
+    background-image: url(/Assets/wa_icon.png)
+ 
+#contact-wa-mobile
+   display: none !important
+
+// end banner
+
+// start body content
+
+.body-content 
+    position: relative
+    width: 100%
+    max-width: $mw
+    height: 2384px
+    left: 0px
+    // top: 636px 
+    margin-top: -39px
+    background-color: $putih
+    z-index: 3
+    border-radius: 50px 50px 0px 0px
+    
+.headline1
+  position: absolute
+  height: 30px 
+  width: 1280px
+  max-width: $mw
+  top: 50px
+  left: 0
+
+  h2
+    text-align: center
+    line-height: 30px
+    color: $biru-satu
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 20px
+   
+      
+.content-text1
+  position: absolute
+  width: 1280px
+  max-width: $mw
+  height: 69px
+  top: 110px
+  left: 0
+
+  p
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px
+    line-height: 22px
+    text-align: center
+    color: $item-abu
+     
+.headline2
+  position: absolute
+  width: 1280px
+  max-width: $mw
+  height: 29px
+  top: 214px
+  left: 0
+
+  h2
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 19px
+    line-height: 28px
+    text-align: center
+    color: $biru-satu
+   
+.su-tab
+  position: absolute
+  overflow: hidden
+  left: 0px
+  right: 0px 
+  top: 293px
+  width: 340px !important
+  padding: 10px 20px 10px 20px
+  background-color: $biru-satu
+  z-index: 3
+  border-radius: 40px
+  
+  button
+    background-color: inherit
+    border: none
+    outline: none
+    padding: 20px 30px 
+    transition: 0.3s
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 16px 
+    line-height: 24px
+    color: $putih
+    border-radius: 40px
+    &.active
+      background-color: $putih
+      color: $hitam
+    
+.tabcontent
+  position: absolute
+  height: 626px
+  width: 100%
+  top: 407px
+  left: 0
+  max-width: $mw
+  // background-color: $banner-gray
+  z-index: 3
+  display: none
+
+.cards
+  display: grid
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr))
+  // grid: auto-flow / 1fr 1fr 1fr
+  gap: 20px
+
+  .card 
+    height: 546px
+    margin-top: 40px
+    border-radius: 20px
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15)
+    padding: 0px
+
+// start isi dalam card
+
+// start isi dalam header
+.card-header
+  position: absolute
+  width: 100% !important
+  height: 220px
+  border-radius: 20px 20px 0px 0px !important
+  padding: 0px !important
+  
+// start Warna header
+#header-paket1
+  background: radial-gradient(131.2% 131.2% at 37.29% 28%, rgba(97, 47, 122, 0.9) 30.48%, rgba(97, 47, 122, 0.281449) 99.99%, rgba(97, 47, 122, 0) 100%)
+#header-paket2
+  background: radial-gradient(131.2% 131.2% at 37.29% 28%, #E86E25 30.48%, rgba(232, 110, 37, 0) 100%)
+#header-paket3
+  background: radial-gradient(131.2% 131.2% at 37.29% 28%, #F59F03 30.48%, rgba(245, 159, 3, 0) 100%)
+#header-paket4
+  background: radial-gradient(131.2% 131.2% at 37.29% 28%, #4CB8AB 30.48%, rgba(76, 184, 171, 0) 100%)
+// end warna header
+
+.card-header-namapaket
+  position: relative
+  width: 100% !important
+  height: 29px 
+  top: 50px
+  h5
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 700
+      size: 19px
+    line-height: 28px 
+    text-align: center
+    color: $putih
+
+.card-header-harga
+  position: relative
+  width: 100% !important
+  height: 51px
+  top: 60px
+  h2
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 34px 
+    line-height: 51px
+    text-align: center
+    color: $putih
+
+.card-header-bulan
+  position: relative
+  width: 100% !important
+  height: 23px   
+  top: 75px
+  p
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px
+    line-height: 22px
+    text-align: center
+    color: $putih
+
+// end isi dalam header
+
+.circle-point
+  position: absolute
+  width: 25px !important
+  height: 25px !important
+  left: 35px 
+.pkt1
+  background:
+    image: url(/Assets/circle-icon-paket.svg)
+    size: cover 
+.pkt2   
+  background:
+    image: url(/Assets/circle-icon-paket-oranye.png)
+    size: cover 
+.pkt3   
+  background:
+    image: url(/Assets/circle-icon-paket-kuning.png)
+    size: cover 
+.pkt4   
+  background:
+    image: url(/Assets/circle-icon-paket-ijopaket.png)
+    size: cover 
+#point-1
+  top: 262px
+#point-2
+  top: 317px
+#point-3
+  top: 372px
+
+.content-headline-body-card
+  position: absolute
+  width: 220px  !important
+  height: 23px
+  left: 75px
+  p
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px 
+    line-height: 22px 
+    color: $biru-dua
+#headline-body-1
+  top: 260px
+#headline-body-2
+  top: 315px
+#headline-body-3
+  top: 370px
+
+.content-subheadline-body-card
+  position: absolute
+  width: 210px !important
+  height: 17px    
+  left: 75px
+  p
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 11px  
+    line-height: 16px  
+    color: $old-gray
+#subheadline-body-1
+  top: 283px
+#subheadline-body-2
+  top: 338px
+
+.btn-info-paket
+  position: absolute
+  width: 15px !important
+  height: 15px !important
+  padding: 0 !important
+  top: 265px
+  left: 268px
+  background:
+    image: url(/Assets/information-icon-tip.png)
+    size: contain 
+    repeat: no-repeat
+#btn-info-paket-khusus
+  left: 273px
+
+.content-image-body-card
+  position: absolute
+  width: 150px !important
+  height: 34.44px !important
+  padding: 0 !important
+  left: 80px 
+  top: 398px
+  background:
+    image: url(/Assets/image-streamtainment.png)
+    size: cover
+
+.button-paket-card
+  position: absolute
+  width: 274px !important
+  height: 54px   
+  left: 0px
+  right: 0px
+  top: 465px
+
+.btn-paket
+  padding: 15px 80px
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.15))
+  border-radius: 10px
+  text-decoration: none
+  color: $putih
+  line-height: 24px  
+  font:
+    family: 'Poppins'
+    style: normal
+    weight: 600
+    size: 16px   
+#btn-pkt-1
+  background: linear-gradient(108.47deg, #612F7A 38.9%, rgba(97, 47, 122, 0) 170.17%)
+#btn-pkt-2
+  background: linear-gradient(108.47deg, #E86E25 38.9%, rgba(232, 110, 37, 0) 170.17%)
+#btn-pkt-3
+  background: linear-gradient(108.47deg, #F59F03 38.9%, rgba(245, 159, 3, 0) 170.17%)
+#btn-pkt-4   
+  background: linear-gradient(108.47deg, #4CB8AB 38.9%, rgba(76, 184, 171, 0) 170.17%)
+  
+// end isi dalam card
+
+// Start component style cta section
+
+.headline-cta
+  font:
+    family: 'Poppins'
+    style: normal
+    weight: 600
+    size: 24px   
+  line-height: 36px
+  color: $biru-satu
+
+.subheadline-cta
+  font:
+    family: 'Poppins'
+    style: normal
+    weight: 600
+    size: 20px  
+  line-height: 30px  
+  color: $hitam
+
+.content-cta
+  font:
+    family: 'Poppins'
+    style: normal
+    weight: 500
+    size: 15px  
+  line-height: 22px
+  color: $item-abu
+
+.button-cta
+  padding: 15px 20px
+  background: linear-gradient(128.21deg, #3B60AD 34.64%, rgba(59, 96, 173, 0) 190.41%)
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.15))
+  border-radius: 10px
+  text-decoration: none
+  color: $putih
+  font:
+    family: 'Poppins'
+    style: normal
+    weight: 600
+    size: 16
+  line-height: 24px  
+  &:hover
+    background-color: $hitam
+
+// end component style cta section
+
+// start tentang kami cta section
+
+.cta-ttgkami-section
+  position: absolute
+  left: 0
+  width: 100%
+  max-width: $mw
+  height: 538px
+  top: 1063px
+  z-index: 3
+  // background-color: $biru-dua
+  background: radial-gradient(71% 142.29% at 35.49% 34.57%, rgba(59, 96, 173, 0.1) 0%, rgba(219, 226, 239, 0) 100%)
+
+.ttgkami-cta-head
+  position: absolute
+  width: 395px !important
+  height: 36px   
+  left: 130px
+  top: 130px
+
+.ttgkami-cta-subhead
+  position: absolute
+  width: 395px !important
+  height: 30px  
+  left: 130px
+  top: 176px
+
+.ttgkami-cta-content
+  position: absolute
+  width: 429px !important
+  height: 115px
+  left: 130px
+  top: 231px
+
+.ttgkami-cta-button
+  position: absolute
+  width: 158px !important
+  height: 54px  
+  left: 130px
+  top: 371px
+
+.kotak-fitur
+  position: absolute
+  width: 240px !important 
+  height: 200px
+  z-index: 4
+  &#kotak-1 
+    right: 390px
+    top: 60px
+    background: linear-gradient(180deg, rgba(59, 96, 173, 0.48) 0%, rgba(59, 96, 173, 0.168) 100%)
+    backdrop-filter: blur(4px)
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.15))
+    color: $biru-satu
+  &#kotak-2 
+    right: 130px
+    top: 60px
+    background: linear-gradient(180deg, rgba(232, 110, 37, 0.48) 0%, rgba(232, 110, 37, 0.168) 100%)
+    backdrop-filter: blur(4px)
+    border-radius: 0px 50px 0px 0px
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.15))
+    color: $oranye
+  &#kotak-3 
+    right: 390px
+    top: 280px
+    background: linear-gradient(180deg, rgba(37, 211, 102, 0.48) 0%, rgba(37, 211, 102, 0.168) 100%)
+    backdrop-filter: blur(4px)
+    border-radius: 0px 0px 0px 50px
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.15))
+    color: $ijo-wa
+  &#kotak-4  
+    right: 130px
+    top: 280px
+    background: linear-gradient(180deg, rgba(250, 178, 22, 0.48) 0%, rgba(250, 178, 22, 0.168) 100%)
+    backdrop-filter: blur(4px)
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.15))
+    color: $kuning-pertama
+
+  img
+    position: absolute
+    top: 40px
+    left: 70px  
+
+  .about-img-caption
+    position: relative
+    top: 165px
+    width: 100%
+    height: 15px    
+    h3
+      font:
+        family: 'Poppins'
+        style: normal
+        weight: 700
+        size: 10px    
+      line-height: 15px  
+      text-align: center
+
+// end tentang kami cta section
+
+// start hubungi kami cta section
+
+.hubkami-pic
+  position: absolute
+  width: 500px !important
+  max-width: $mw
+  height: 420px
+  left: 100px
+  top: 1671px
+  z-index: 3
+
+.hbgkami-cta-head
+  position: absolute
+  width: 395px !important
+  height: 36px   
+  right: 163px
+  top: 1731px
+
+.hbgkami-cta-subhead
+  position: absolute
+  width: 395px !important
+  height: 30px  
+  right: 163px
+  top: 1777px
+
+.hbgkami-cta-content
+  position: absolute
+  width: 429px !important
+  height: 115px
+  right: 130px
+  top: 1832px
+
+.hbgkami-cta-button
+  position: absolute
+  width: 158px !important
+  height: 54px  
+  right: 402px
+  top: 1972px
+
+.go-top-button
+  position: absolute
+  width: 150px !important
+  height: 26px
+  top: 2243px
+  left: 0px
+  right: 0px
+  z-index: 3
+  a
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 17px    
+    line-height: 26px  
+    color: $biru-satu
+  img
+    width: 20px 
+    height: 20px
+    margin-left: 10px
+    margin-bottom: 5px
+
+// start modal sass
+.modal-header
+  height: 121px
+  width: 457px !important
+  background-color: $biru-satu
+  border-radius: 30px 30px 0px 0px !important
+.modal-content
+  width: 457px !important
+  height: 425px
+  border-radius: 30px !important
+  background-color: rgba(254, 254, 254, 0.1) !important
+.modal-body
+   width: 457px !important
+   height: 425px
+   background-color: $putih
+   border-radius: 0px 0px 30px 30px !important
+
+.modal-title
+  padding: 0px !important
+  position: absolute
+  width: 232px !important
+  height: 69px
+  left: 30px 
+  top: 26px
+  p
+    font:
+      family: 'poppins'
+      style: normal
+      weight: 500
+      size: 15px   
+    line-height: 22px     
+    color: $putih
+
+.input-nama
+  display: flex
+  flex-direction: row
+  gap: 15px 
+  position: absolute   
+  top: 15px
+#input-nama-user
+  padding: 12px 10px 12px 10px
+  width: 191px !important
+  height: 47px   
+  background-color: $biru-tiga
+  border-radius: 5px
+  border: none
+
+.input-email
+  position: absolute 
+  top: 72px
+.input-nomor-hp
+  position: absolute
+  top: 127px
+.input-alamat
+  position: absolute
+  top: 182px
+#input-kolom-panjang
+  padding: 12px 10px 12px 10px
+  width: 397px !important
+  height: 47px 
+  background-color: $biru-tiga
+  border-radius: 5px
+  border: none
+
+.button-input
+  position: absolute
+  left: 28px
+  width: 397px !important
+  height: 47px !important
+  padding: 12px 179px !important
+  background-color: $biru-dua
+  top: 240px
+  border-radius: 5px
+  a
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px  
+    line-height: 22px 
+    color: $putih
+    text-decoration: none
+
+.tombol-close
+  position: absolute
+  right: 30px
+  top: 30px 
+  width: 35px !important
+  height: 35px 
+  border-radius: 100%
+  background-color: $putih
+.button-x
+  position: absolute
+  width: 7px 
+  height: 23px 
+  left: 1px 
+  top: 5px 
+  p
+    cursor: pointer
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 500
+      size: 15px 
+    line-height: 22px 
+    color: $hitam
+
+// end modal sass
+
+
+// end body content
+
+// start footer
+.footer 
+    position: relative
+    width: 100%
+    max-width: $mw
+    height: 90px
+    background-color: $biru-dua
+    z-index: 3
+    left: 0
+
+.copy-right 
+  position: absolute
+  width: 413px !important
+  height: 24px
+  max-width: $mw
+  left: 80px
+  top: 32px
+
+  h3
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 16px
+    line-height: 24px
+    color: $putih
+
+.menu-footer
+  position: absolute 
+  width: 361px !important
+  height: 24px
+  right: 80px 
+  top: 22px
+
+  ul
+    list-style: none
+    display: flex 
+    flex-direction: row 
+    align-items: flex-start 
+    padding: 10px 
+    gap: 30px
+
+  li
+    font:
+      family: 'Poppins'
+      style: normal
+      weight: 600
+      size: 16px
+    line-height: 26px
+    flex: none
+    flex-grow: 0
+
+  a
+    text-decoration: none
+    color: $putih
+
+// end footer
+
+// slider mobile sass
+
+.slider-mobile
+  display: none !important
+  position: relative
+  top: 40px 
+  // padding-left: 20%
+  // height: 200px !important
+  // width: 240px !important
+
+.slidermobile-sld
+  // background-color: #fff !important
+  height: 200px !important
+  width: 240px !important
+  margin-left: 15%
+
+#sld-ttg-kmi-1
+  background:
+    image: url(/Assets/slider-ttg-kami-1.png)
+#sld-ttg-kmi-2
+  background:
+    image: url(/Assets/slider-ttg-kami-2.png)
+#sld-ttg-kmi-3
+  background:
+    image: url(/Assets/slider-ttg-kami-3.png)
+#sld-ttg-kmi-4
+  background:
+    image: url(/Assets/slider-ttg-kami-4.png)
+
+
+.slick-prev,.slick-next
+  display: none !important
+
+
+@import 'homepage_resp'

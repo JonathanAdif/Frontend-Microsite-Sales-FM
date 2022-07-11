@@ -1,0 +1,364 @@
+@media screen and (max-width: 600px) {
+  .headline1, .content-text1, .menu,
+.kotak-fitur,
+.header-desktop {
+    display: none !important;
+  }
+
+  .header-mobile a:not(:first-child) {
+    display: none;
+  }
+
+  .header-mobile a.icon {
+    float: right;
+    display: block;
+  }
+
+  .header-mobile.responsive {
+    position: fixed;
+  }
+
+  .header-mobile.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-mobile.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    color: #000;
+  }
+
+  .logo-mobile {
+    margin-top: 15px;
+    margin-left: 43%;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .banner {
+    background-image: url(/Assets/banner-homepage-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .headline-banner {
+    width: 100% !important;
+    height: 41px;
+    top: 201px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+  }
+  .headline-banner h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .subhead-banner {
+    width: 100% !important;
+    height: 24px;
+    top: 236px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+  }
+  .subhead-banner h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .banner-overlay {
+    height: 330px;
+  }
+
+  .contact-icon {
+    width: 40px !important;
+    height: 45px;
+  }
+
+  .wa-icon {
+    width: 30px !important;
+    height: 29px !important;
+    top: 8px !important;
+    right: 5px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  #contact-wa-desktop {
+    display: none !important;
+  }
+
+  #contact-wa-mobile {
+    display: block !important;
+  }
+
+  .body-content {
+    margin-top: -300px;
+    height: 3250px;
+  }
+
+  .headline2 {
+    top: 25px;
+    width: 244px !important;
+    height: 72px;
+    left: 0px !important;
+    right: 0px !important;
+  }
+  .headline2 h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .su-tab {
+    top: 112px;
+  }
+
+  .tabcontent {
+    top: 197px;
+    height: 1840px;
+  }
+
+  .cta-ttgkami-section {
+    top: 2035px;
+    height: 570px;
+  }
+
+  .slider-mobile {
+    display: block !important;
+  }
+
+  .ttgkami-cta-head {
+    width: 196px !important;
+    height: 73px;
+    left: 0px;
+    right: 0px;
+    top: 265px;
+    text-align: center;
+  }
+  .ttgkami-cta-head h2 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .ttgkami-cta-subhead {
+    width: 240px !important;
+    height: 18px;
+    left: 0px;
+    right: 0px;
+    top: 333px;
+    text-align: center;
+  }
+  .ttgkami-cta-subhead h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .ttgkami-cta-content {
+    width: 240px !important;
+    height: 102px;
+    left: 0px;
+    right: 0px;
+    top: 363px;
+    text-align: justify;
+  }
+  .ttgkami-cta-content p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .button-cta {
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .ttgkami-cta-button {
+    left: 0px;
+    right: 0px;
+    top: 500px;
+  }
+
+  .hubkami-pic {
+    width: 240px !important;
+    height: 200px;
+    left: 15%;
+    top: 2640px;
+  }
+  .hubkami-pic img {
+    width: 240px !important;
+    height: 200px;
+  }
+
+  .hbgkami-cta-head {
+    width: 196px !important;
+    height: 73px;
+    left: 0px;
+    right: 0px;
+    top: 2865px;
+    text-align: center;
+  }
+  .hbgkami-cta-head h2 {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .hbgkami-cta-subhead {
+    width: 240px !important;
+    height: 18px;
+    left: 0px;
+    right: 0px;
+    top: 2933px;
+    text-align: center;
+  }
+  .hbgkami-cta-subhead h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .hbgkami-cta-content {
+    width: 240px !important;
+    height: 102px;
+    left: 0px;
+    right: 0px;
+    top: 2963px;
+    text-align: justify;
+  }
+  .hbgkami-cta-content p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .hbgkami-cta-button {
+    left: 0px;
+    right: 0px;
+    top: 3100px;
+  }
+
+  .go-top-button {
+    top: 3165px;
+  }
+  .go-top-button a {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 15%;
+  }
+  .go-top-button img {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .footer {
+    height: 115px !important;
+  }
+
+  .copy-right {
+    width: 240px !important;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    top: 60px;
+    text-align: center;
+  }
+  .copy-right h3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .menu-footer {
+    top: 10px !important;
+    left: 0px;
+    right: 0px;
+    width: 274px;
+    height: 20px;
+  }
+  .menu-footer ul {
+    gap: 10px !important;
+  }
+
+  .modal-content {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+  }
+
+  .modal-header {
+    width: 100% !important;
+    border-radius: 0px !important;
+  }
+
+  .modal-body {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+  }
+
+  #input-nama-user {
+    width: 290px !important;
+  }
+
+  #input-kolom-panjang {
+    width: 290px !important;
+  }
+
+  .input-nama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .input-email {
+    top: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .input-nomor-hp {
+    top: 204px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .input-alamat {
+    top: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+  }
+
+  .button-input {
+    top: 343px;
+    left: 0px;
+    right: 0px;
+    width: 290px !important;
+    padding: 10px 130px !important;
+  }
+  .button-input a {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}/*# sourceMappingURL=homepage_resp.css.map */
